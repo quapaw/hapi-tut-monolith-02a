@@ -1,0 +1,19 @@
+{
+  "name": "hapi-tut-monolith-02a",
+  "version": "1.0.0",
+  "description": "Breaking the Monolith by using hapi - part 2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "hapi",
+    "tutorial",
+    "monolith"
+  ],
+  "author": "Scott Jones",
+  "license": "ISC",
+  "dependencies": {
+    "hapi": "^16.1.0"
+  }
+}
