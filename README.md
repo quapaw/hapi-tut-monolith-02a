@@ -22,7 +22,43 @@ There are just a few changes to this tutorial that I have made.  I will point th
 
 ## Add Customer Service
 We want a new service that will return information about customers.  The only method we will implement is the get.
+I have defined the customer api in the [swagger json file](https://github.com/quapaw/hapi-tut-monolith-02a/blob/master/api-doc/customers.json)
+###Create a sample json file with sample output records
+Create the file under a new directory called samples
+You can look at the [sample json file](https://github.com/quapaw/hapi-tut-monolith-02a/blob/master/samples/customers.json) with records I can return when the get is called.  The point of this tutorial is not doing the actual get.
+###Add the sample json file so you can just return it
+```javascript
+const SampleCustomers = require('./samples/customers');
+```
+###Add the route and handler to the index.js file
+```javascript
+server.route({method: 'GET',
+              path: '/customers',
+              handler: function (request, reply) {
+                  reply(SampleCustomers);
+              }});
+```
 
+## Add Product Service
+We want a new service that will return information about products.  The only method we will implement is the get.
+I have defined the product api in the [swagger json file](https://github.com/quapaw/hapi-tut-monolith-02a/blob/master/api-doc/products.json)
+###Create a sample json file with sample output records
+Create the file under a new directory called samples
+You can look at the [sample json file](https://github.com/quapaw/hapi-tut-monolith-02a/blob/master/samples/products.json) with records I can return when the get is called.  The point of this tutorial is not doing the actual get.
+###Add the sample json file so you can just return it
+```javascript
+const SampleProducts = require('./samples/products');
+```
+###Add the route and handler to the index.js file
+```javascript
+server.route({method: 'GET',
+              path: '/products',
+              handler: function (request, reply) {
+                  reply(SampleProducts);
+              }});
+```
+
+## run server
 
 Items I added
 * npm [shrinkwrap](https://docs.npmjs.com/cli/shrinkwrap)
