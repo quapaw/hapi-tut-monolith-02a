@@ -68,6 +68,6 @@ You should see a message stating your code is running
 Server running at: http://localhost:3000
 ```
 ###Test the services
-Go to the following link (http://localhost:3000/customers)
-Go to the following link (http://localhost:3000/products)
+* Go to the following link [](http://localhost:3000/customers)
+* Go to the following link [](http://localhost:3000/products)
 
