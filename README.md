@@ -2,7 +2,7 @@
 ## Background
 Let me get the disclaimer out of the way: I am not an expert on Hapi
 I started looking into Hapi's ability to break components out.
-This is my attempt to follow other tutorial from a hello world to a true component system.
+This is my attempt to follow other tutorials from a hello world to a true component system.
 I have broken this down into the following steps
 
 | Project  | Description | Link |
@@ -16,7 +16,7 @@ I have broken this down into the following steps
 |hapi-tut-monolith-03-products|Just the produce service| [https://github.com/quapaw/hapi-tut-monolith-03-products](github)|
 
 ## Add Services: customers and products
-This is a simple hello world tutorial. 
+This step adds two services to the simple hello world tutorial. 
 I used this [Tutorial](https://medium.com/@dstevensio/manifests-plugins-and-schemas-organizing-your-hapi-application-68cf316730ef#.2nve7u2r0) for the pattern of breaking the monolith.
 There are just a few changes to this tutorial that I have made.  I will point those changes out as I go along.
 
@@ -58,10 +58,16 @@ server.route({method: 'GET',
               }});
 ```
 
-## run server
+## Run Server and Test
+###Start the server
+```
+node index.js
+```
+You should see a message stating your code is running
+```
+Server running at: http://localhost:3000
+```
+###Test the services
+Go to the following link (http://localhost:3000/customers)
+Go to the following link (http://localhost:3000/products)
 
-Items I added
-* npm [shrinkwrap](https://docs.npmjs.com/cli/shrinkwrap)
-~ A major problem with some of the tutorials I found is that the examples are outdated.<br/>
-~ Shrinkwrap will capture all the versions of all components. <br/>
-~ So hopefully you will be able to pull this code years from now and it will compile and work. :) <br/>
