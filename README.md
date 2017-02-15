@@ -8,13 +8,14 @@ I have broken this down into the following steps
 | Project  | Description | Link |
 |---|---|---|
 |hapi-tut-monolith-01|A simple hello world hapi project| [https://github.com/quapaw/hapi-tut-monolith-01](github)|
-|hapi-tut-monolith-02a|Add services - customers and products| [https://github.com/quapaw/hapi-tut-monolith-02a](github)|
-|hapi-tut-monolith-02b|Moved service to their own folders| [https://github.com/quapaw/hapi-tut-monolith-02b](github)|
-|hapi-tut-monolith-02c|Used Glue to configure services| [https://github.com/quapaw/hapi-tut-monolith-02c](github)|
+|**hapi-tut-monolith-02a**|Add services - customers and products| [https://github.com/quapaw/hapi-tut-monolith-02a](github)|
+|hapi-tut-monolith-02b|Adding Glue and externalizing config| [https://github.com/quapaw/hapi-tut-monolith-02b](github)|
+|hapi-tut-monolith-02c|Moving services into their own folders| [https://github.com/quapaw/hapi-tut-monolith-02c](github)|
 |hapi-tut-monolith-03-main|Moved service into own project.  This pulls the services in| [https://github.com/quapaw/hapi-tut-monolith-03-master](github)|
 |hapi-tut-monolith-03-customer|Just the customer service| [https://github.com/quapaw/hapi-tut-monolith-03-customers](github)|
-|hapi-tut-monolith-03-products|Just the produce service| [https://github.com/quapaw/hapi-tut-monolith-03-products](github)|
+|hapi-tut-monolith-03-products|Just the produce service| _[https://github.com/quapaw/hapi-tut-monolith-03-products](github)|_
 
+##HAPI Tutorial - Monolith - 2A
 ## Add Services: customers and products
 This step adds two services to the simple hello world tutorial. 
 I used this [Tutorial](https://medium.com/@dstevensio/manifests-plugins-and-schemas-organizing-your-hapi-application-68cf316730ef#.2nve7u2r0) for the pattern of breaking the monolith.
